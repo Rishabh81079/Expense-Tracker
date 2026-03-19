@@ -8,10 +8,10 @@ import { ContextProvider } from "./utilities/Store"
 
 function App(){
     return(
-        <ContextProvider>
-        <div className="w-[50%] mx-auto bg-gray-100 shadow">
+        <ContextProvider >
+        <div className="w-[50%] mx-auto bg-gray-100 shadow shadow-black">
         <Header></Header>
-        <div className="mx-10">
+        <div className="mx-40">
         <Balance></Balance>
         <IncomeExpenses></IncomeExpenses>
         <AddTransaction></AddTransaction>

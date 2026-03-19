@@ -8,7 +8,7 @@ function AddTransaction(){
 const {transactions} = useContext(GlobalStore)
 
     return(
-        <div className="mt-10 w-[50%]">
+        <div className="mt-10 w-full">
         <h1>History</h1>
         <div className="border-b mt-2"></div>
         {transactions.map((value)=> <TransactionMap value={value} key={value.id}></TransactionMap>)}
