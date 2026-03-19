@@ -4,10 +4,11 @@ import Balance from "./components/Balance"
 import IncomeExpenses from "./components/incomeExpenses"
 import AddTransaction from "./components/addTransaction"
 import TransactionList from "./components/transactionList"
-
+import { ContextProvider } from "./utilities/Store"
 
 function App(){
     return(
+        <ContextProvider>
         <div className="w-[50%] mx-auto bg-gray-100 shadow">
         <Header></Header>
         <div className="mx-10">
@@ -17,6 +18,7 @@ function App(){
         <TransactionList></TransactionList>
         </div>
         </div>
+        </ContextProvider>
     )
 }
 
